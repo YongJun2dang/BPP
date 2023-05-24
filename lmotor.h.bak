@@ -1,0 +1,18 @@
+#ifndef LMOTOR_H
+#define LMOTOR_H
+
+class LMotor
+{
+public:
+    LMotor();
+
+    // absoluve movement
+    virtual int MoveInPulse(int axis, float velocity, float position) = 0;
+    virtual int MoveRInPulse(int axis, float velocity, float distance) = 0;
+    virtual int Stop(int axis) = 0;
+    virtual int MoveCont(int axis, float velocity) = 0;
+    virtual float GetPosition(int axis) = 0;
+    virtual int IsMoving(int axis) = 0;
+};
+
+#endif // LMOTOR_H

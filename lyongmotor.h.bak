@@ -1,0 +1,11 @@
+#ifndef LYONGMOTOR_H
+#define LYONGMOTOR_H
+#include "lmotor.h"
+class LYongMotor : public LMotor
+{
+public:
+    LYongMotor();
+
+};
+
+#endif // LYONGMOTOR_H
